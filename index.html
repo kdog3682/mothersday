@@ -1,1 +1,245 @@
-hhhhhhhhhhowdy @ mom mmmmmmmmmmmmmmmm
+<!doctype html><html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png">
+        <link rel="stylesheet" href="normalize.css"/>
+        
+        <style>
+            .gcolumns {
+                display: flex;
+                flex-direction: column;
+            }
+            .columns > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100vw;
+                height: 100vh;
+            }
+            .mom-name {
+                position: relative;
+                text-transform: lowercase;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                font-size: 100px;
+                background-image: url("lilacs.jpg");
+                background-size: cover;
+                background-position: center center;
+            }
+            .columns {
+                width: 100%;
+                height: 100%;
+            }
+            .mom-message {
+                display: grid;
+                
+                grid-template-areas: "happy mothers"
+                    "day mom";
+                
+                grid-template-columns: repeat(2, 1fr);
+                font-size: 70px;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-weight: 600;
+                width: 100%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding: 0;
+                margin: 0;
+                background: #bee3f8 /* blue2 */;
+                background-image: url("blossoms.jpg");
+                background-size: cover;
+                background-position: center center;
+            }
+            .happy {
+                grid-area: happy; height;
+                background: #6b46c1 /* purple7 */;
+                color: #ebf8ff /* blue1 */;
+                border-radius: 70px;
+            }
+            .mothers {
+                grid-area: mothers; height;
+                color: #6b46c1 /* purple7 */;
+            }
+            .mom-message > * {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+            .day {
+                color: #6b46c1 /* purple7 */;
+            }
+            .mom {
+                color: #faf089 /* yellow3 */;
+                background: #6b46c1 /* purple7 */;
+                font-size: 80px;
+                border-radius: 70px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .pictures {
+                display: grid;
+                grid-template-areas: "baby-kids-picture family-picture";
+                grid-template-columns: repeat(2, 1fr);
+                background: #bee3f8 /* blue2 */;
+            }
+            .baby-me-picture {
+                grid-area: baby-me-picture; height;
+            }
+            .baby-maylynn-picture {
+                grid-area: baby-maylynn-picture; height;
+            }
+            .family-picture {
+                grid-area: family-picture; height;
+                color: #63b3ed /* blue4 */;
+                background: #fed7d7 /* red2 */;
+                width: 100%;
+                height: 100%;
+                background-image: url("pic1.jpeg");
+                background-size: cover;
+                background-position: center center;
+            }
+            .baby-kids-picture {
+                background: #feb2b2 /* red3 */;
+                width: 100%;
+                height: 100%;
+                grid-area: baby-kids-picture; height;
+                background-size: 80%;
+                background-position: 60%  60%;
+                overflow: hidden;
+                background-image: url("pic2.jpeg");
+            }
+            .fooname-container {
+                display: flex;
+                background: #fffff0 /* yellow1 */;
+                border-radius: 30px;
+                opacity: 0.7;
+                padding: 30px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .name-container {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border: unset;
+                left: 2%;
+                top: v8%;
+                padding-top: 10px;
+                color: rgba(255, 255, 255, .3) /* white3 */;
+                opacity: 1;
+                font-weight: 600;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .closing-message {
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-weight: 600;
+            }
+            .heart {
+                margin-right: 10px;
+                padding: 10px;
+                margin-left: 10px;
+                background-color: red;
+                display: inline-block;
+                height: 30px;
+                margin: 0 10px;
+                position: relative;
+                top: 0;
+                transform: rotate(-45deg);
+                width: 30px;
+            }
+            .sender {
+                display: flex;
+                margin-bottom: 40px;
+                width: 300px;
+                justify-content: center;
+                align-items: center;
+            }
+            .gina {
+                background: linear-gradient(to right, #fbb6ce /* violet3 */ , #b83280 /* violet7 */ );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .maylynn {
+                margin-left: 10px;
+            }
+            .kevin {
+                margin-left: 10px;
+            }
+            .dad {
+                margin-left: 10px;
+            }
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="columns">
+        	<section class="mom-name">
+        			<div class="name-container">
+        				<div class="gina">gina</div>
+        				<div class="qi">qi</div>
+        				<div class="yan">yan</div>
+        			</div>
+        	</section>
+        	<section class="mom-message">
+        		<div class="happy">happy</div>
+        		<div class="mothers">mother's</div>
+        		<div class="day">day</div>
+        		<div class="mom">mom!</div>
+        	</section>
+        	<section class="pictures">
+        		<div class="baby-kids-picture"></div>
+        		<div class="family-picture"></div>
+        	</section>
+        	<section class="closing-message">
+        		<div class="sender">
+        			<div class="heart"></div>
+        			<div class="kevin">kevin</div>
+        		</div>
+        		<div class="sender">
+        			<div class="heart"></div>
+        			<div class="maylynn">maylynn</div>
+        		</div>
+        		<div class="sender">
+        			<div class="heart"></div>
+        			<div class="dad">dad</div>
+        		</div>
+        	</section>
+        </div>
+    </body>
+<html>
