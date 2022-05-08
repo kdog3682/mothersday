@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-enter-active { transition: opacity 1s     }
+.fade-leave-active { transition: opacity 0.75s; } 
+.fade-enter, .fade-leave-to { opacity: 0;       }
+
+
+input, input:focus, input:disabled, input:disabled:focus {
+    border: none;
+    outline: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+input:disabled {
+    background: inherit;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    outline: none;
+}
+
+
+.twocol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.twocol > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pre {
+    whitespace: 'pre'
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+  
+
+.jsxgraph {
+    width: 200px;
+    height: 200px;
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-icon {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: -2px; /* yes, I'm that particular about formatting */
+}
